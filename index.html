@@ -1,60 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Will You Be My Valentine? 💝</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Will You Be My Valentine 💖</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="floating-elements"></div>
-
-<div class="container">
-    <h1 id="valentineTitle"></h1>
-
-    <!-- Music -->
-    <div id="musicControls" class="music-controls">
-        <button id="musicToggle" class="music-btn">🎵 Play Music</button>
-        <audio id="bgMusic" loop>
-            <source id="musicSource" type="audio/mpeg">
-        </audio>
+    <!-- 🎵 Music Button (Top Right) -->
+    <div class="music-controls">
+        <button id="musicToggle">🎵 Play Music</button>
     </div>
 
-    <!-- Question Container -->
-    <div id="questionContainer" class="question-section">
-        <h2 id="questionText"></h2>
+    <!-- Main Card -->
+    <div class="card">
+        <h1 class="title">Kannu, my love...</h1>
 
-        <div class="btn-group">
-            <button id="yesBtn" class="cute-btn"></button>
-            <button id="noBtn" class="cute-btn"></button>
-        </div>
+        <p id="questionText">Do you see a future with me?</p>
 
-        <div id="secretAnswer" class="secret-answer hidden">
-            <button id="secretBtn" class="cute-btn special"></button>
+        <div class="buttons">
+            <button class="yes-btn">A whole lifetime ❤️</button>
+            <button class="no-btn">I already see us old together 🥺</button>
         </div>
     </div>
 
-    <!-- Love Meter -->
-    <div id="loveMeterSection" class="question-section hidden">
-        <h2 id="loveQuestion"></h2>
-        <input type="range" min="0" max="10000" value="100" id="loveMeter">
-        <p><span id="startText"></span> (<span id="loveValue">100</span>%)</p>
-        <p id="extraLove" class="hidden"></p>
-        <button id="nextLoveBtn" class="cute-btn"></button>
-    </div>
+    <!-- Hidden Audio -->
+    <audio id="bgMusic">
+        <source id="musicSource" type="audio/mpeg">
+    </audio>
 
-    <!-- Celebration -->
-    <div id="celebration" class="celebration hidden">
-        <h2 id="celebrationTitle"></h2>
-        <p id="celebrationMessage"></p>
-        <p id="celebrationEmojis"></p>
-    </div>
-</div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
 
-<script src="config.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
