@@ -1,34 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Will You Be My Valentine 💖</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💝</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- 🎵 Music Button (Top Right) -->
-    <div class="music-controls">
-        <button id="musicToggle">🎵 Play Music</button>
-    </div>
+    <!-- Floating Emojis -->
+    <div class="floating-elements"></div>
 
-    <!-- Main Card -->
-    <div class="card">
-        <h1 class="title">Kannu, my love...</h1>
+    <!-- Main Container -->
+    <div class="container">
+        <h1 id="valentineTitle"></h1>
 
-        <p id="questionText">Do you see a future with me?</p>
-
-        <div class="buttons">
-            <button class="yes-btn">A whole lifetime ❤️</button>
-            <button class="no-btn">I already see us old together 🥺</button>
+        <!-- Music -->
+        <div id="musicControls" class="music-controls">
+            <button id="musicToggle" class="music-btn">🎵 Play Music</button>
+            <audio id="bgMusic" loop>
+                <source id="musicSource" type="audio/mpeg">
+            </audio>
         </div>
+
+        <!-- 🔥 ONE Dynamic Question Container -->
+        <div id="questionContainer" class="question-section"></div>
     </div>
 
-    <!-- Hidden Audio -->
-    <audio id="bgMusic">
-        <source id="musicSource" type="audio/mpeg">
-    </audio>
-
+    <!-- Scripts -->
     <script src="config.js"></script>
     <script src="script.js"></script>
 
