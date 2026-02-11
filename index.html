@@ -2,44 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Will You Be My Valentine? 💝</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💝</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="floating-elements"></div>
+    <!-- Floating Emojis -->
+    <div class="floating-elements"></div>
 
-<div class="container">
-    <h1 id="valentineTitle"></h1>
+    <!-- Main Container -->
+    <div class="container">
+        <h1 id="valentineTitle"></h1>
 
-    <!-- Question Section -->
-    <div class="question-section">
-        <h2 id="questionText"></h2>
-
-        <div class="btn-group">
-            <button class="cute-btn" id="yesBtn">Yes</button>
-            <button class="cute-btn" id="noBtn">No</button>
+        <!-- Music -->
+        <div id="musicControls" class="music-controls">
+            <button id="musicToggle" class="music-btn">🎵 Play Music</button>
+            <audio id="bgMusic" loop>
+                <source id="musicSource" type="audio/mpeg">
+            </audio>
         </div>
 
-        <p class="hover-text hidden" id="hoverText"></p>
+        <!-- 🔥 ONE Dynamic Question Container -->
+        <div id="questionContainer" class="question-section"></div>
     </div>
 
-    <!-- Celebration -->
-    <div class="celebration hidden" id="celebration">
-        <h2 id="celebrationTitle"></h2>
-        <p id="celebrationMessage"></p>
-        <p id="celebrationEmojis"></p>
-    </div>
-</div>
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
 
-<!-- Scripts -->
-<script src="config.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
