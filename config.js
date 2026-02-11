@@ -5,7 +5,7 @@
 const CONFIG = {
     // Your Valentine's name that will appear in the title
     // Example: "Jade", "Sarah", "Mike"
-    valentineName: "Jade",
+    valentineName: "Kannu",
 
     // The title that appears in the browser tab
     // You can use emojis! 💝 💖 💗 💓 💞 💕
@@ -29,13 +29,106 @@ const CONFIG = {
         },
         second: {
             text: "How much do you love me?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
+            startText: "This much 🤏",                                   // Text before the percentage
+            nextBtn: "No wait… THIS MUCH♾️🤗❤️"                                         // Text for the next button
         },
         third: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+            text: "Who fell first?",                          // For the love meter
+            startText: "You 😏",                                   // Text before the percentage
+            nextBtn: "Okay fine… Me 🙈",                                         // Text for the next button
+            secretAnswer: "But we both fell hard and that’s what matters 💕"           // Secret hover message
+        },
+        fourth: {
+            text: "Am I your favorite person?",                          // For the love meter
+            yesBtn: "Obviously ❤️",                                   // Text before the percentage
+            noBtn: "Who else could it be? 😌"                                         // Text for the next button  
+        },
+        fifth: {
+            text: "Do I make you happy?",                          // For the love meter
+            yesBtn: "More than you know ❤️",                                   // Text before the percentage
+            noBtn: "You are my happiness 🥺",                                         // Text for the next button  
+            secretAnswer: "You’re my safe place.🌎"           // Secret hover message
+        },
+        sixth: {
+            text: "If I’m sad, what will you do?",                          // For the love meter
+            yesBtn: "Hug you tight 🤗",                                   // Text before the percentage
+            noBtn: "Never let you be sad alone 💕"                                         // Text for the next button  
+        },
+        seventh: {
+            text: "What am I to you?",                          // For the love meter
+            yesBtn: "My favorite person ❤️",                                   // Text before the percentage
+            noBtn: "My forever ❤️",                                         // Text for the next button  
+            secretAnswer: "My home."           // Secret hover message
+        },
+        eighth: {
+            text: "If I annoy you?",                          // For the love meter
+            yesBtn: "I’ll still love you 😌",                                   // Text before the percentage
+            noBtn: "You’re my favorite problem 💕"                                         // Text for the next button  
+        },
+        nineth: {
+            text: "Would you choose me again?",                          // For the love meter
+            yesBtn: "In every lifetime ❤️",                                   // Text before the percentage
+            noBtn: "Again and again 😘",                                         // Text for the next button  
+            secretAnswer: "There was never another choice.😌"           // Secret hover message
+        },
+        tenth: {
+            text: "Do you think about me?",                          // For the love meter
+            yesBtn: "All the time 😌",                                   // Text before the percentage
+            noBtn: "Only 24/7 😏",                                         // Text for the next button  
+            secretAnswer: "Don’t lie… I live rent-free in your head."           // Secret hover message
+        },
+        eleventh: {
+            text: "If I was next to you right now… what would you do?",                          // For the love meter
+            yesBtn: "Hug you tight 🤗",                                   // Text before the percentage
+            noBtn: "You know what would happen 🙈",                                         // Text for the next button  
+            secretAnswer: "Careful… I might not let you go. 😈"           // Secret hover message
+        },
+        twelveth: {
+            text: "Am I distracting?",                          // For the love meter
+            yesBtn: "Very distracting 😩",                                   // Text before the percentage
+            noBtn: "I can’t focus because of you 😈😌"                                         // Text for the next button  
+        },
+        thirteenth: {
+            text: "Do I give you butterflies?",                          // For the love meter
+            yesBtn: "A whole zoo 🦋",                                   // Text before the percentage
+            noBtn: "My heart races every time 😌"                                         // Text for the next button  
+        },
+        fourteenth: {
+            text: "Do I drive you crazy?",                          // For the love meter
+            yesBtn: "In the best way 😌",                                   // Text before the percentage
+            noBtn: "Completely 🔥"                                         // Text for the next button  
+        },
+        fifteenth: {
+            text: "If we were alone right now…",                          // For the love meter
+            yesBtn: "Dangerous situation 😩",                                   // Text before the percentage
+            noBtn: "Very dangerous 😈🔥"                                         // Text for the next button  
+        },
+        sixteenth: {
+            text: "Do you want a kiss?",                          // For the love meter
+            yesBtn: "Muwaahhhhh 😘💋",                                   // Text before the percentage
+            noBtn: "Come here first 😏",                                         // Text for the next button  
+            secretAnswer: "Nerla vaa mothamum tharen 🙈😘💋"           // Secret hover message
+        },
+        seventeenth: {
+            text: "Are we cute together?",                          // For the love meter
+            yesBtn: "The cootest couple 😎",                                   // Text before the percentage
+            noBtn: "Goals 💕"                                         // Text for the next button  
+        },
+        eighteenth: {
+            text: "If I steal your heart?",                          // For the love meter
+            yesBtn: "Already yours ❤️",                                   // Text before the percentage
+            noBtn: "You never had to steal it 💘"                                         // Text for the next button  
+        },
+        ninteenth: {
+            text: "Do you see a future with me?",                          // For the love meter
+            yesBtn: "A whole lifetime ❤️",                                   // Text before the percentage
+            noBtn: "I already see us old together 🥺"                                         // Text for the next button  
+        },
+        twentieth: {
+            text: "Will you be my Valentine on February 14th, 2026? 🌹", // The big question!
+            yesBtn: "Always ❤️",                                             // Text for "Yes" button
+            noBtn: "Try clicking again 😉",                                                 // Text for "No" button
+            secretAnswer: "Error 404: 'No' is not an option when it comes to us 💕"           // Secret hover message
         }
     },
 
