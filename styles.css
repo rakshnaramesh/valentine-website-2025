@@ -1,61 +1,72 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    margin: 0;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ffb6c1, #ffc3a0);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.container {
-    text-align: center;
-    max-width: 500px;
-    padding: 30px;
-    background: rgba(255,255,255,0.2);
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
-h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-}
-
-.cute-btn {
-    padding: 12px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 25px;
-    background: #ff6b6b;
-    color: white;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.cute-btn:hover {
-    background: #ff8787;
-}
-
-.hidden {
-    display: none;
-}
-
-.secret-answer {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-}
-
-.special {
-    background: #ff4757;
-}
-
+/* Music Button */
 .music-controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.music-controls button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 450px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.title {
+    font-family: cursive;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
-.celebration {
-    font-size: 1.4rem;
+#questionText {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.yes-btn,
+.no-btn {
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.yes-btn {
+    background: #ff6b6b;
+}
+
+.no-btn {
+    background: #ff7675;
 }
