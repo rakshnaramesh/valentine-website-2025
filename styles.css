@@ -1,95 +1,61 @@
-/* =====================
-   GLOBAL STYLES
-===================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
     background: linear-gradient(135deg, #ffafbd, #ffc3a0);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
-/* =====================
-   CONTAINER
-===================== */
-
 .container {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
     padding: 30px;
-    width: 90%;
-    max-width: 420px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 2.2rem;
-    color: #ff4757;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
 }
-
-h2 {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    color: #ff4757;
-}
-
-/* =====================
-   QUESTIONS
-===================== */
-
-.question-section {
-    position: relative;
-}
-
-.hidden {
-    display: none !important;
-}
-
-/* =====================
-   BUTTONS
-===================== */
 
 .cute-btn {
-    background: #ff6b6b;
-    color: white;
+    padding: 12px 20px;
+    margin: 10px;
     border: none;
     border-radius: 25px;
-    padding: 10px 20px;
-    margin: 8px;
-    font-size: 0.95rem;
+    background: #ff6b6b;
+    color: white;
     cursor: pointer;
-    transition: all 0.3s ease;
+    font-size: 1rem;
 }
 
 .cute-btn:hover {
     background: #ff8787;
-    transform: scale(1.05);
 }
 
-.final-yes {
+.hidden {
+    display: none;
+}
+
+.secret-answer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.special {
     background: #ff4757;
 }
 
-/* =====================
-   SECRET ANSWER (FIXED)
-===================== */
+.music-controls {
+    margin-bottom: 20px;
+}
 
-.secret-answer {
-    display: none;
-    position: fixed;
-    inset: 0;
-    backgro
+.celebration {
+    font-size: 1.4rem;
+}
